@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/08/07 21:15:42.000.017,C:\Users\naphta3\APP Teste\MDIAPP.dproj=C:\Users\naphta3\APP Teste\ProvaDelphiApp.dproj</Transaction>
+    <Transaction>2021/08/07 21:17:22.000.990,C:\Users\naphta3\APP Teste\CHILDWIN.PAS=</Transaction>
+    <Transaction>2021/08/07 21:17:22.000.990,C:\Users\naphta3\APP Teste\about.pas=</Transaction>
+    <Transaction>2021/08/07 21:23:17.000.786,=C:\Users\naphta3\APP Teste\Unit1.pas</Transaction>
+    <Transaction>2021/08/07 21:23:40.000.794,C:\Users\naphta3\APP Teste\Unit1.dfm=C:\Users\naphta3\APP Teste\ufrmTarefa1.dfm</Transaction>
+    <Transaction>2021/08/07 21:23:40.000.794,C:\Users\naphta3\APP Teste\Unit1.pas=C:\Users\naphta3\APP Teste\ufrmTarefa1.pas</Transaction>
+    <Transaction>2021/08/08 10:40:30.000.434,=C:\Users\naphta3\APP Teste\Unit1.pas</Transaction>
+    <Transaction>2021/08/08 10:41:32.000.861,C:\Users\naphta3\APP Teste\ufrmTarefa2.pas=C:\Users\naphta3\APP Teste\Unit1.pas</Transaction>
+    <Transaction>2021/08/08 10:41:32.000.861,C:\Users\naphta3\APP Teste\ufrmTarefa2.dfm=C:\Users\naphta3\APP Teste\Unit1.dfm</Transaction>
+    <Transaction>2021/08/08 10:43:04.000.288,=C:\Users\naphta3\APP Teste\Unit1.pas</Transaction>
+    <Transaction>2021/08/08 10:43:52.000.616,C:\Users\naphta3\APP Teste\ufrmTarefa3.dfm=C:\Users\naphta3\APP Teste\Unit1.dfm</Transaction>
+    <Transaction>2021/08/08 10:43:52.000.616,C:\Users\naphta3\APP Teste\ufrmTarefa3.pas=C:\Users\naphta3\APP Teste\Unit1.pas</Transaction>
+    <Transaction>2021/08/09 17:39:08.000.470,=C:\Users\naphta3\APP Teste\Componentes\uspQuery.pas</Transaction>
+  </Transactions>
+</BorlandProject>

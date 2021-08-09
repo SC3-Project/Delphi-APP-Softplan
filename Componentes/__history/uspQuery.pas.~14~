@@ -1,0 +1,76 @@
+unit uspQuery;
+
+interface
+
+uses
+  FireDAC.Comp.Client, System.SysUtils;
+
+type
+  TspQuery = class(TFDQuery)
+  public
+    spCondicoes: String;
+    spColunas: String;
+    spTabelas: String;
+    function GeraSQL: String;
+  end;
+
+implementation
+
+{ TspQuery }
+
+function TspQuery.GeraSQL: String;
+var
+  psColunas, psCondicoes, psAux: String;
+begin
+
+  Self.SQL.Clear;
+
+  if Pos(',', Self.spTabelas) > 0 then
+  begin
+
+    Result := '1';
+    Exit;
+
+  end;
+
+  psAux := '';
+  psColunas := Self.spColunas;
+
+  if Trim(psColunas) <> '' then
+  begin
+
+    while Pos(',', psColunas) > 0 do
+    begin
+
+      psAux := psAux + Self.spTabelas + '.' + Copy(psColunas, 1, Pos(',', psColunas) - 1) + ',';
+      psColunas := Copy(psColunas, Pos(',', psColunas) + 1, Length(psColunas));
+
+    end;
+
+    if psColunas <> '' then
+      psAux := psAux + Self.spTabelas + '.' + psColunas
+    else if psAux[Length(psAux)] = ',' then
+      psAux[Length(psAux)] := #0;
+
+  end
+
+  else
+    psAux := Self.spTabelas + '.*';
+
+  psColunas := psAux;
+
+  psAux := '';
+
+  if Trim(Self.spCondicoes) <> '' then
+  begin
+
+    psCondicoes := ' WHERE ';
+
+  end;
+
+  Result := 'SELECT ' + psColunas + ' FROM ' + Self.spTabelas + psCondicoes;
+  Self.SQL := Result;
+
+end;
+
+end.

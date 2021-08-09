@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/08/08 11:30:37.000.947,=rtl.dcp</Transaction>
+    <Transaction>2021/08/08 11:32:45.000.947,C:\Users\naphta3\APP Teste\Componentes\spComponentes.dproj=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
+    <Transaction>2021/08/08 11:33:17.000.969,=C:\Users\naphta3\APP Teste\Componentes\Unit1.pas</Transaction>
+    <Transaction>2021/08/08 11:33:51.000.916,C:\Users\naphta3\APP Teste\Componentes\uspQuery.pas=C:\Users\naphta3\APP Teste\Componentes\Unit1.pas</Transaction>
+    <Transaction>2021/08/08 11:46:14.000.675,=FireDACCommonDriver.dcp</Transaction>
+    <Transaction>2021/08/08 11:46:14.000.659,=dbrtl.dcp</Transaction>
+    <Transaction>2021/08/08 11:46:14.000.659,=FireDAC.dcp</Transaction>
+    <Transaction>2021/08/08 11:46:14.000.675,=FireDACCommon.dcp</Transaction>
+  </Transactions>
+</BorlandProject>
