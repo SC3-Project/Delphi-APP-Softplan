@@ -65,7 +65,7 @@ begin
       
       psSQL := GeraSQL; 
       
-      is psSQL = '1' then
+      if psSQL = '1' then
       begin
         
         memTabela.SetFocus;
