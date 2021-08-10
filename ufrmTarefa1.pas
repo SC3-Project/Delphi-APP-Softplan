@@ -43,13 +43,15 @@ uses uspQuery;
 
 
 procedure TfrmTarefa1.btnGerarSQLClick(Sender: TObject);
+var
+  psSQL: String;
 begin
 
   if memTabela.Lines.Count <= 0  then
   begin
 
     memTabela.SetFocus;
-    MessageDlg('Informe a Tabela para gera��o do SQL.', mtWarning, [mbOk], 0);
+    MessageDlg('Informe a Tabela para geração do SQL.', mtWarning, [mbOk], 0);
     Exit;
 
   end;
@@ -60,6 +62,19 @@ begin
       spCondicoes := memCondicao.Lines.Text;
       spColunas := memColuna.Lines.Text;
       spTabelas := memTabela.Lines.Text;
+      
+      psSQL := GeraSQL; 
+      
+      is psSQL = '1' then
+      begin
+        
+        memTabela.SetFocus;
+        MessageDlg('Somente uma Tabela é permitida para geração do SQL.', mtWarning, [mbOk], 0);
+        
+      end
+      
+      else
+        memSQLGerado.Lines.Text := psSQL;
 
     finally
 
